@@ -2,7 +2,6 @@ const fastify = require("fastify")({ logger: true });
 require("dotenv").config();
 
 // ── Plugins ──────────────────────────────
-
 fastify.register(require("@fastify/cors"), {
   origin: "*",
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
